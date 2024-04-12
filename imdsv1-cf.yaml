@@ -97,7 +97,7 @@ Resources:
       RouteTableId: !Ref RouteTable
       SubnetId: !Ref PublicSubnet
 
-    S3Role:
+  S3Role:
     Type: 'AWS::IAM::Role'
     Properties:
       AssumeRolePolicyDocument:
@@ -118,6 +118,7 @@ Resources:
               - Effect: Allow
                 Action: '*'
                 Resource: '*'
+  
   S3InstanceProfile:
     Type: 'AWS::IAM::InstanceProfile'
     Properties:
