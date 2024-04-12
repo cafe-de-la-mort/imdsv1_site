@@ -133,4 +133,4 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: super-secret-bucket54981651981
+      BucketName: !Sub ${AWS::StackName}-super-secret-bucket54981651981
