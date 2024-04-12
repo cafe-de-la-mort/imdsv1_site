@@ -125,3 +125,9 @@ Resources:
       Path: /
       Roles:
         - !Ref S3Role
+
+    S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: super-secret-bucket54981651981
